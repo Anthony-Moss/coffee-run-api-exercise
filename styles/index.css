@@ -1,0 +1,62 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(136, 72, 34);
+}
+
+h1 {
+    text-align: center;
+}
+
+.main-content {
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.email-list {
+    width: 18%;
+}
+
+.order-detail {
+    outline: 1px solid red;
+    width: 79%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.detailsDisplay {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.25);
+} 
+
+div.order-details img {
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.email-list,
+.order-detail {
+    background-color: rgb(129, 98, 73);
+    height: 100%;
+
+}
